@@ -13,12 +13,13 @@ HelloWorld!的なリポジトリ
 ## 開発準備
 
 * 依存ライブラリの一括インストール
+* `local_settings.py`の生成
 
 ``` console
-$ pipenv sync
+$ ./init.sh
 ```
 
-pipenvって便利だね！
+*詳細は(init.py)を見て*
 
 ### Heroku周り
 
