@@ -14,3 +14,5 @@ fi
 SECRET_KEY=`pipenv run python -c "from django.core.management.utils import get_random_secret_key;print(get_random_secret_key())"`
 sed -e "s/%SECRET_KEY%/SECRET_KEY=\'${SECRET_KEY}\'/g" ${LOCAL_SETTINGS_TEMPLATE} > ${LOCAL_SETTINGS}
 
+
+pipenv run python manage.py migrate
