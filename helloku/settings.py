@@ -135,5 +135,6 @@ LOGGING = {
 
 
 if DEBUG is False:
+    DEBUG = True
     import django_heroku
     django_heroku.settings(locals())
