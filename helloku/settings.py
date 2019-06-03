@@ -32,10 +32,6 @@ try:
 except ImportError as error:
     pass
 
-if DEBUG is False:
-    import django_heroku
-    django_heroku.settings(locals())
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -119,3 +115,7 @@ STATIC_URL = '/static/'
 STAIC_ROOT = '/path/to/var/www/static/'
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'helloku', 'static')]
+
+if DEBUG is False:
+    import django_heroku
+    django_heroku.settings(locals())
