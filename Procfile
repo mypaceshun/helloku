@@ -1,1 +1,1 @@
-web: gunicorn helloku/wsgi.py --log-file -
+web: gunicorn helloku.wsgi --log-file -
